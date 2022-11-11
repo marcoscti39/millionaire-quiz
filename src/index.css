@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.right-answer {
+  animation: right-answer 3s forwards;
+}
+
+.wrong-answer {
+  animation: wrong-answer 3s forwards;
+}
+
+.lift-up {
+  animation: lift-up 1s forwards;
+}
+
+@keyframes right-answer {
+  30% {
+    background-color: #1d4ed8;
+  }
+
+  60% {
+    background-color: #1e3a8a;
+  }
+
+  75% {
+    background-color: #1d4ed8;
+  }
+  100% {
+    background-color: rgb(10, 209, 10);
+  }
+}
+
+@keyframes wrong-answer {
+  30% {
+    background-color: #1d4ed8;
+  }
+
+  60% {
+    background-color: #1e3a8a;
+  }
+
+  75% {
+    background-color: #1d4ed8;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes lift-up {
+  0% {
+    transform: translateY(30%);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
